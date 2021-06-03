@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Mon Portfolio, YSM, portfolio Dévelopeur web, HOME, Contact">
+	<meta name="descriptioin" content="Mon portfolio, petite introduction sur mon travail personnel...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="home.js"></script>
+
+	<title>Page d'acceuil</title>
+
+</head>
+<body>
+	<section id="header">
+		<div>
+			<h1 id="titre"><strong>Développeur web</strong></h1>
+			<div>
+				<span id="open" onclick="openNav()">&#9776;YSM</span>
+			</div>				
+		</div>
+		
+		<div id="mySidenav" class="sidenav">
+			<div>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<img src="icon/moi.jpg" width="250px" height="auto">
+				<p>Saint-Michel <br>Yann</p>
+				<p>y.saint-michel@<br>outlook.com</p>	
+				<p class="btn-cv" onclick="viewCV()">Mon CV</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="section2">
+		<div class="br"></div>
+		<div>
+			<div class="paragraphe">
+				<p>Bonjour, 
+					cela fait un peu plus de cinq ans que je m'intéresse à la programmation informatique. 
+					Début Âout 2020 j'ai entamé une formation de développeur web junior avec OpenClassrooms. J'ai terminé et validé cette formation le 16 janvier 2021. 
+					Durant ma formation, j'ai réalisé 6 projets professionnalisant que vous allez pouvoir découvrir en allant voir mon portfolio que vous découvrirez en bas de cette page. Vous découvrirez d'autre projet qui sont des projets personnels.
+					j'ai aussi une passion pour le dessin et le sport, mais ça c'est une autre histoire... Bonne visite.</p>
+			</div>
+			<div>
+				<div class="about-image-box">
+					<img src="icon/dev.jpg" class="about-images img-1" alt="livre d'apprentisssage du développement web/mobile" title="livre d'apprentisssage du développement web/mobile">
+					<img src="icon/dessin.jpg" class="about-images img-2" alt="dessin représentent le joker de batman The dark knigh" title="dessin représentent le joker de batman The dark knight">
+					<img src="icon/sport.png" class="about-images img-3" alt="dessin d'une personne qui court" title="dessin d'une personne qui court">
+				</div>
+			</div>
+			<br><br>
+			<span class="showPortfolio" onclick="showPortfolio()">Voir mon Portfolio</span>
+			<br><br>
+			<div class="paragraphe skill-icon">
+				<p></p>
+				<br>
+				<div class="container1">
+					<div class="box"><img class="img-icon" src="icon/html5.png" width="50px"></div>
+					<div class="box"><img class="img-icon" src="icon/css.png" width="50px"></div>
+					<div class="box"><img class="img-icon" src="icon/java-script.png" width="50px"></div>
+					<div class="box"><img class="img-icon" src="icon/database.png" width="50px"></div>
+					<div class="box"><img class="img-icon" src="icon/mysql.png" width="50px"></div>
+					<div class="box"><img class="img-icon" src="icon/git-sketched-social-logo-outline.png" width="50px"></div>
+				</div>
+			</div>				
+		</div>
+	</section>
+	<!-- Section pdf-->
+	<section>
+		<a href="javascript:void(0)" id="cross-cv" class="closebtn-cv" onclick="closeCv()" title="fermer le cv">&times;</a>
+		<!--<embed id="view_cv" class="my_pdf" src="CV_SUP_VINCI.pdf" width="600" height="400">-->
+		<img id="view_cv" class="my_pdf" src="cv.png" width="600" height="400">
+	</section>
+
+	<section id="section3">
+		<div id="portfolio">
+			<a href="javascript:void(0)" class="closebtnportfolio" onclick="closePortfolio()">&times;</a>
+			<p></p>
+			<div>
+				<header class="header">
+					<div class="primary-header-box">
+						<h1 class="heading-primary">
+							<span class="heading-primary-main">MON PORTFOLIO</span><br>
+							<span class="heading-primary-sub"> petite introduction sur mon travail personnel...</span>
+						</h1>
+						<div class="heading-primary-line"></div>
+						<a href="#"> Solo-Learn </a><br>
+						<a href="#"> OpenClassrooms </a>
+					<!--	<p id="loisir" onclick="Open();">Mes loisirs</p><br>
+						<a href="javascript:void(0)" onclick="Open();">Mes loisirs</a>-->
+					</div>
+				</header>
+
+				<section class="project-section">
+					<div class="center-text margin-top-medium">
+						<h1 class="heading-project">Mes Projets réalisées avec OpenClassrooms</h1>
+					</div>
+
+					<div class="project-row">
+						
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Transformer une maquette en site web</h1>
+							<p class="margin-top-medium">Html, CSS</p>
+							<p class="margin-top-medium"> Réaliser le : Aout 2020 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/mon-cv-WEB">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Dynamsier une page web avec des animations CSS</h1>
+							<p class="margin-top-medium">Html, CSS, Sass</p>
+							<p class="margin-top-medium"> Réaliser le : Septembre 2020 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/YannSaint-Michel_3_15082020">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Optimiser un site web existant</h1>
+							<p class="margin-top-medium">Html, CSS et référencement SEO</p>
+							<p class="margin-top-medium"> Réaliser le : Octobre 2020</p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/yann-sm.github.io">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Construiser un site e-commerce</h1>
+							<p class="margin-top-medium">Html, CSS, Javascript</p>
+							<p class="margin-top-medium"> Réaliser le : Novembre 2020 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/projet5">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Construiser une API sécurisée pour une application d'avis gastronomiques</h1>
+							<p class="margin-top-medium">Html, CSS, Javascript, Node.js, Express, mongoose</p>
+							<p class="margin-top-medium"> Réaliser le : Décembre 2020 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/Projet6">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Créer un réseau social d'entreprise</h1>
+							<p class="margin-top-medium">Html, CSS, Javascript, Node.js, Express, Vue.js, MySQL</p>
+							<p class="margin-top-medium"> Réaliser le : Janvier 2021 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/Projet7">Voir code</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="project-section-2">
+					<div class="center-text margin-top-medium">
+						<h1 class="heading-project" id="heading-project-color">Projets personnels</h1>
+					</div>
+
+					<div class="project-row">
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Mon portfolio</h1>
+							<p class="margin-top-medium">Html, CSS</p>
+							<p class="margin-top-medium"> Réaliser le : Janvier 2021 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/mon_portfolio/">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Mes petits projets</h1>
+							<p class="margin-top-medium">Html, CSS, Javascript</p>
+							<p class="margin-top-medium"> Réaliser le : Mai 2020 </p>
+							<a class="project-link-btn" href="https://code.sololearn.com/WBu5u72SZC8t">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Morpion</h1>
+							<p class="margin-top-medium">Html, CSS, Javascript</p>
+							<p class="margin-top-medium"> Réaliser le : Avril 2020 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/JeuMorpion">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Blockbreacker</h1>
+							<p class="margin-top-medium">Html, CSS, Javascript</p>
+							<p class="margin-top-medium"> Réaliser le : Mai 2020 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/blockBreacker">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Mon blog Hellfest</h1>
+							<p class="margin-top-medium">Html, CSS, Javascript, jquery</p>
+							<p class="margin-top-medium"> Réaliser le : Janvier 2020 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/siteMusic">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Calculatrice</h1>
+							<p class="margin-top-medium">Html, CSS, Javascript</p>
+							<p class="margin-top-medium"> Réaliser le : Juin 2019 </p>
+							<a class="project-link-btn" href="https://code.sololearn.com/W8ZXz71fWsHH/#">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Sélécteur de Couleur</h1>
+							<p class="margin-top-medium">Html, CSS, Javascript</p>
+							<p class="margin-top-medium"> Réaliser le : Juillet 2019 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/Choix-de-couleur">Voir code</a>
+						</div>
+
+						<div class="project-items project-items-hover">
+							<h1 class="margin-top-medium">Mes projets en Java</h1>
+							<p class="margin-top-medium">Java, Eclipse</p>
+							<p class="margin-top-medium"> Réaliser le : Mai 2019 </p>
+							<a class="project-link-btn" href="https://github.com/yann-sm/projetJava">Voir code</a>
+						</div>
+					</div>
+					<div class="fetch">
+						<span>V</span>
+					</div>
+				</section>
+
+				<section class="skill-section">
+					<div class="center-text">
+						<h1 class="skill-heading-main">SKILLS</h1>
+					</div>
+
+					<div class="skill-list">
+						<ul>
+							<li>Html5 <img class="img-icon" src="icon/html5.png" width="20px "></li>
+							<li>CSS3 <img class="img-icon" src="icon/css.png" width="20px "></li>
+							<li>Sql <img class="img-icon" src="icon/database.png" width="20px "></li>
+							<li>Javascript <img class="img-icon" src="icon/java-script.png" width="20px "></li>
+							<li>Git <img class="img-icon" src="icon/git-sketched-social-logo-outline.png" width="20px "></li>
+							<div class="hr"></div>
+							<li>Expériences frameworks js : Vue, Jquery</li>
+							<li>Expériences sur : Node.js, Express, SASS, Php, Java, Python</li>
+							<li>Environnement de développement : VisualStudioCode, sublimeText</li>
+						</ul>
+					</div>
+				</section>
+
+
+				<footer class="footer">
+					<h4>Copyright - Y.S.M 2021</h4>
+				</footer>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+
+	</footer>
+
+</body>
+</html>
