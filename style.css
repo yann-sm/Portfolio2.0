@@ -572,7 +572,7 @@ ul li {
 }
 
 /* media queries */
-@media (max-width: 1000px) {
+@media (max-width: 1190px) {
 	.project-row {
 		display: flex;
 		flex-direction: column;
